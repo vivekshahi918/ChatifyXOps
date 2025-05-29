@@ -7,3 +7,6 @@ COPY ../ /var/www/html/
 RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
 
 EXPOSE 80
+
+
+# password for argo "aQiTzq7k43taq1P6" user"admin"
