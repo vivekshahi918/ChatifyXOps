@@ -1,0 +1,4 @@
+apiVersion: v2
+name: chatify
+description: A Helm chart for PHP Chatify with MySQL
+version: 0.1.0

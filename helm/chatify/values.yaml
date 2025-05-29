@@ -1,0 +1,9 @@
+image:
+  repository: vivekshahi918/chatify
+  tag: latest
+
+mysql:
+  rootPassword: root
+  user: root
+  password: root
+  database: chatify
