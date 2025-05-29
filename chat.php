@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = mysqli_connect("db", "root", "root", "chatify");
+$conn = mysqli_connect("mysql", "root", "root", "chatify");
 
 // boxarea.php 
 

@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_POST["senderid"]) && isset($_POST["receiverid"]) && isset($_POST["email"]) && isset($_POST["session"])) {
-    $conn = mysqli_connect("db", "root", "root", "chatify");
+    $conn = mysqli_connect("mysql", "root", "root", "chatify");
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
