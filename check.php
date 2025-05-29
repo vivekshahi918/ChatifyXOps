@@ -6,7 +6,7 @@ if (empty($_POST["email"]) || empty($_POST["pass"])) {
     exit();
 } else {
     // Database connection
-    $conn = mysqli_connect("localhost", "root", "", "chat_db");
+    $conn = mysqli_connect("db", "root", "root", "chatify");
 
     if (!$conn) {
         die("Database connection failed: " . mysqli_connect_error());

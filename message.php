@@ -3,7 +3,7 @@ session_start();
 
 // example.php /
 if (isset($_COOKIE["login"]) && isset($_SESSION["session"])) {
-    $conn = mysqli_connect("localhost", "root", "", "chat_db");
+    $conn = mysqli_connect("db", "root", "root", "chatify");
 
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
