@@ -1,6 +1,6 @@
 image:
   repository: vivekshahi918/chatify
-  tag: latest  # specify fixed version tag, avoid 'latest'
+  tag: 'chatify-b8e8764'
 
 mysql:
   image: mysql:5.7.42  # pinned patch version
