@@ -35,6 +35,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}
           git add helm/chatify/values.yaml
           git commit -m "CI: Update image tag to ${{ env.TAG }}"
-          git push
+          git push origin main
