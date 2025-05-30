@@ -30,6 +30,8 @@ jobs:
           sed -i "s|tag:.*|tag: '${{ env.TAG }}'|g" helm/chatify/values.yaml
 
       - name: 📤 Commit updated values.yaml
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
