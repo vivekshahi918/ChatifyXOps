@@ -1,6 +1,6 @@
 <?php
 if (isset($_REQUEST["email"])) {
-    $conn = mysqli_connect("db", "root", "", "chat_db");
+    $conn = mysqli_connect("mysql", "root", "root", "chatify");
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }

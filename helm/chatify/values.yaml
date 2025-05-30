@@ -1,7 +1,14 @@
 image:
   repository: vivekshahi918/chatify
-  tag: latest
+  tag: latest  # specify fixed version tag, avoid 'latest'
 
 mysql:
+  image: mysql:5.7.42  # pinned patch version
   rootPassword: root
   database: chatify
+  username: root
+  pvcSize: 5Gi
+
+service:
+  type: LoadBalancer  # change to NodePort for local dev if needed
+  port: 80

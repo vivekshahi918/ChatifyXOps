@@ -49,7 +49,7 @@ if (!move_uploaded_file($_FILES['photo']['tmp_name'], $target)) {
 
 $password = password_hash($pass, PASSWORD_BCRYPT);
 
-$dt = date("d M, Y");
+$dt = date("Y-m-d H:i:s");
 $query = "INSERT INTO user (sn, userId, first_name, last_name, email, password, status, login_time)
           VALUES ($sn, '$code', '$fname', '$lname', '$email', '$password', 1, '$dt')";
 if (mysqli_query($conn, $query)) {
