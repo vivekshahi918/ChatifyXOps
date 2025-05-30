@@ -15,8 +15,24 @@ jobs:
       - name: 🔐 DockerHub Login
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
+      - name: 🏷️ Set Image Tag
+        id: vars
+        run: echo "TAG=chatify-$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+
       - name: 🛠️ Build Docker Image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/chatify -f Dockerfile .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/chatify:${{ env.TAG }} -f Dockerfile .
 
       - name: 🚀 Push to DockerHub
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/chatify
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/chatify:${{ env.TAG }}
+
+      - name: ✏️ Update Helm values.yaml
+        run: |
+          sed -i "s|tag:.*|tag: '${{ env.TAG }}'|g" helm/chatify/values.yaml
+
+      - name: 📤 Commit updated values.yaml
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add helm/chatify/values.yaml
+          git commit -m "CI: Update image tag to ${{ env.TAG }}"
+          git push
