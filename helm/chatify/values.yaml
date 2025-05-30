@@ -1,6 +1,6 @@
 image:
   repository: vivekshahi918/chatify
-  tag: 'chatify-0b937f8'
+  tag: 'chatify-d3c22d9'
 
 mysql:
   image: mysql:5.7.42  # pinned patch version
