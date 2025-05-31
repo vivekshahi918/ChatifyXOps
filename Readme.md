@@ -34,7 +34,6 @@ With ChatifyXOps, the project has been transformed to embrace DevOps best practi
 2. **Install dependencies:**
     ```bash
     cd ChatifyXOps
-    npm install
     ```
 3. **Set up environment variables:**  
    Copy `.env.example` to `.env` and update as needed.
