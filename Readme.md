@@ -60,4 +60,4 @@ With ChatifyXOps, the project has been transformed to embrace DevOps best practi
 ## License
 
 This project is for personal or educational use only.  
-Unauthorized copying or distribution is prohibited.
+Unauthorized copying or distribution is prohibited..
