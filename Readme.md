@@ -6,7 +6,7 @@ ChatifyXOps is an evolution of the original Chatify project, blending robust rea
 ![ArgoCD](images/AgroCD.png)
 
 ### 🔁 ArgoCD Auto-Sync in Action
-![ArgoCD Sync](images/AgroCD 2.png)
+![ArgoCD Sync](images/AgroCB.png)
 
 ### 🐳 Docker Container Overview
 ![Docker](images/Docker.png)
