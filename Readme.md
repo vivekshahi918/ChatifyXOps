@@ -6,7 +6,7 @@ ChatifyXOps is an evolution of the original Chatify project, blending robust rea
 ![ArgoCD](images/AgroCD.png)
 
 ### 🔁 ArgoCD Auto-Sync in Action
-![ArgoCD Sync](images/AgroCB 2.png)
+![ArgoCD Sync](images/AgroCD 2.png)
 
 ### 🐳 Docker Container Overview
 ![Docker](images/Docker.png)
@@ -43,7 +43,7 @@ With ChatifyXOps, the project has been transformed to embrace DevOps best practi
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/ChatifyXOps.git
+    git clone https://github.com/vivekshahi918/ChatifyXOps.git
     ```
 2. **Install dependencies:**
     ```bash
