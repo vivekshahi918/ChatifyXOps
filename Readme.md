@@ -1,5 +1,19 @@
 ChatifyXOps is an evolution of the original Chatify project, blending robust real-time chat features with a modern DevOps approach. 
 
+## 📸 Screenshots
+
+### ✅ ArgoCD Application Overview
+![ArgoCD](images/AgroCD.png)
+
+### 🔁 ArgoCD Auto-Sync in Action
+![ArgoCD Sync](images/AgroCB 2.png)
+
+### 🐳 Docker Container Overview
+![Docker](images/Docker.png)
+
+### 💬 ChatifyXOps Login Page
+![Chatify Website](images/website.png)
+
 ## About Chatify (Before DevOpsified)
 
 Chatify started as a real-time chat application focused on seamless user communication. It offered:
@@ -34,7 +48,6 @@ With ChatifyXOps, the project has been transformed to embrace DevOps best practi
 2. **Install dependencies:**
     ```bash
     cd ChatifyXOps
-    npm install
     ```
 3. **Set up environment variables:**  
    Copy `.env.example` to `.env` and update as needed.
@@ -60,4 +73,5 @@ With ChatifyXOps, the project has been transformed to embrace DevOps best practi
 
 ## License
 
-This project is licensed under the MIT License.
+This project is for personal or educational use only.  
+Unauthorized copying or distribution is prohibited..
